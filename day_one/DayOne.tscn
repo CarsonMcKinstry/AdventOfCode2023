@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwe2dlx4p5dhm"]
+
+[ext_resource type="Script" path="res://day_one/DayOne.gd" id="1_afile"]
+[ext_resource type="Script" path="res://components/FileLoader.gd" id="2_4se85"]
+
+[node name="DayOne" type="Node2D"]
+script = ExtResource("1_afile")
+
+[node name="FileLoader" type="Node" parent="."]
+script = ExtResource("2_4se85")
+file_path = "res://day_one/input.txt"

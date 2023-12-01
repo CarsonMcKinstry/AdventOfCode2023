@@ -17,8 +17,11 @@ func _process(delta):
 func as_text():
 	return content.get_as_text()
 
+var strings: Array[String] = []
+
 func as_string_array() -> Array[String]:
-	var strings: Array[String] = []
+	if strings.size() > 0:
+		return strings
 	
 	while !content.eof_reached():
 		strings.push_back(content.get_line())
