@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d261fvkk2r6eq"]
+
+[ext_resource type="PackedScene" uid="uid://dwbrl1v5nifyj" path="res://DaySolution/DaySolution.tscn" id="1_bx75p"]
+[ext_resource type="Script" path="res://day_two/DayTwo.gd" id="2_c7cof"]
+
+[node name="DayTwo" instance=ExtResource("1_bx75p")]
+script = ExtResource("2_c7cof")
+
+[node name="FileLoader" parent="." index="0"]
+file_path = "res://day_two/input.txt"

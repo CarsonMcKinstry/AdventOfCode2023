@@ -24,6 +24,8 @@ func as_string_array() -> Array[String]:
 		return strings
 	
 	while !content.eof_reached():
-		strings.push_back(content.get_line())
+		var line = content.get_line()
+		if line.length() > 0:
+			strings.push_back(line)
 	
 	return strings
